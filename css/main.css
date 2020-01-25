@@ -70,6 +70,12 @@ body {
   justify-content: center;
 }
 
+.carousel {
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+}
 /* 
 =========================
 ======Modificadores======
@@ -132,4 +138,38 @@ ul:hover {
 .header__menu--profile p {
   margin: 0px;
   color: white;
+}
+
+/* Carousel */
+
+.carousel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+
+.carousel__item {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: yellow;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+}
+
+.carousel__item:hover ~ .carousel__item {
+  transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+  transform: scale(1.5);
+  opacity: 1;
 }
