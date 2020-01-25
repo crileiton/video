@@ -239,6 +239,17 @@ ul:hover {
   font-size: 14px;
 }
 
+.login__container--form a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login__container--form a:hover {
+  text-decoration: underline;
+}
+
 .login__container--remember-me {
   color: white;
   display: flex;
